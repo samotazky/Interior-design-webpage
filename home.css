@@ -1,0 +1,53 @@
+body {
+    background-color: #262626;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background-image: url(/img/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;    
+    margin-top: 50px;
+}
+
+.text-container {
+    width: 800px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.social-icons li {
+    width: 50px;
+    height: 50px;
+    background: white;
+    transition: transform 0.5s ease-in-out;
+}
+
+.social-icons li:hover {
+    transform: translateY(-10px);
+    bottom: 100px;
+}
