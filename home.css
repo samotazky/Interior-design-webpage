@@ -20,15 +20,12 @@ main {
     align-items: center;
     justify-content: center;
     height: 70vh;    
-    padding: 50px 50px 0 50px;
+    margin: 50px 50px 0px 50px;
 }
 
 .text-container {
     max-width: 800px;
 }
-
-.text
-
 
 footer {
     display: flex;

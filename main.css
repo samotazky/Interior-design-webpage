@@ -7,25 +7,11 @@
 a {
     color: #fff;
     text-decoration: none;
-}
-
-*:focus, *:hover {
-    box-sizing: inherit;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-container a {
-    color: #fff;
-    text-decoration: none;
-}
+}   
 
 #logo  {
-    font-weight: 400;
-    font-size: 2.1em;
+    font-weight: 700;
+    font-size: 35px;
 }
 
 
@@ -49,7 +35,7 @@ MENU ICONA
 
 .change .bar1 {
     transform: translate(0, 0.6875em) rotate(-45deg);
-  }
+}
   
 .change .bar2 {opacity: 0;}
   
@@ -98,6 +84,7 @@ MENU ICONA
     gap: 2em;
     margin: .8em 0 0 0;
 }
+
 .menu-primary a,
 .menu-secondary a {
     transition: color 0.3s ease-in-out;
