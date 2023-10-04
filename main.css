@@ -50,9 +50,8 @@ MENU ICONA
     background: #262626;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    height: 100vh;
+    width: 100vw;
     z-index: 100;
     transition: .4s;
     opacity: 0;
@@ -65,7 +64,7 @@ MENU ICONA
 }
 
 .menu {
-    margin: 12em 0 0 10em;
+    margin: 192px 0 0 160px;
 }
 
 .menu ul {
@@ -93,4 +92,16 @@ MENU ICONA
 .menu-primary a:hover,
 .menu-secondary a:hover {
     color: indianred;
+}
+
+@media (max-width: 645px) {
+    #overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        margin: 0;
+    }
 }
