@@ -1,13 +1,7 @@
-
 /* body overflow ak je active overlay*/
 .active-overlay {
     overflow: hidden;
 }
-
-a {
-    color: #fff;
-    text-decoration: none;
-}   
 
 #logo  {
     font-weight: 700;

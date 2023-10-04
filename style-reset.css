@@ -45,3 +45,8 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+}   
