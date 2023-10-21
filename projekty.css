@@ -11,7 +11,7 @@ header {
     background-image: url(/img/Projekty.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35%;
+    height: 45%;
     display: flex;
     align-items: top;
     justify-content: space-between;
@@ -19,16 +19,7 @@ header {
 }
 
 main {
-    padding: 0 20px 50px 20px;
-}
-
-.filter {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    margin: 40px 0;
-    
+    padding: 50px 20px 50px 20px;
 }
 
 .projects {
@@ -37,21 +28,6 @@ main {
     justify-content: center;
     gap: 20px;
 }
-
-.filter button {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    background: transparent;
-    border: none;
-}
-
-.filter button:hover,
-.filter button:focus {
-    text-decoration: underline;
-}
-
 
 .interior {
     position: relative;
@@ -62,6 +38,13 @@ main {
     position: absolute;
     bottom: 20px;
     left: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        height: 35%;
+    }
 }
 
 
