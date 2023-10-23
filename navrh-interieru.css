@@ -43,10 +43,30 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-menu a{
+.footer-menu a {
     font-size: 23px;
     color: #262626;
     font-weight: 600;
+    padding-bottom: 5px;
+
+    position: relative;
+}
+
+.footer-menu a:before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #262626;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.footer-menu a:hover:before {
+    width: 100%;
+    left: 0;
 }
 
 .social-icons {
