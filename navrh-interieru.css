@@ -22,17 +22,27 @@ main {
     padding: 50px 20px 50px 20px;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-}
-
 footer {
     height: 120px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technologies img {
+
+    opacity: .5;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.technologies img:hover {
+    opacity: 1;
 }
 
 .footer-menu {
@@ -50,6 +60,11 @@ footer {
     padding-bottom: 5px;
 
     position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-menu a:hover {
+    color: indianred;
 }
 
 .footer-menu a:before {
@@ -60,7 +75,7 @@ footer {
     content: "";
     height: 2px;
     width: 0;
-    background-color: #262626;
+    background-color: indianred;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -72,5 +87,14 @@ footer {
 .social-icons {
     padding-left: 20px;
     display: inline-flex;
-    gap: 10px;
+    gap: 12px;
+}
+
+.social-icons i {
+    color: #262626;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+    color: indianred;
 }
