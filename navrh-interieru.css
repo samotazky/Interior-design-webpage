@@ -1,0 +1,56 @@
+body {
+    background-color: #262626;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    background-image: url(/img/Navrh-interieru.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+}
+
+main {
+    padding: 50px 20px 50px 20px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-menu a{
+    font-size: 23px;
+    color: #262626;
+    font-weight: 600;
+}
+
+.social-icons {
+    padding-left: 20px;
+    display: inline-flex;
+    gap: 10px;
+}
