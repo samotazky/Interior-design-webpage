@@ -9,6 +9,8 @@ document.querySelector(".menu-btn").onclick = function () {
   menuBtn.classList.toggle("change")
   body.classList.toggle("active-overlay")
 }
+window.addEventListener("DOMContentLoaded", => {
 
-let url = window.location.hash
-console.log(url);
+  let url = window.location.hash
+  console.log(url);
+})
