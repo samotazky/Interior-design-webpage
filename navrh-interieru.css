@@ -23,24 +23,31 @@ header {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     left: 60px;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 60px;
 
-    padding: 50px 20px 50px 20px;
+    margin: 50px 20px 50px 20px;
+}
+
+.main-content {
+    max-width: 850px;
+    text-align: center;
 }
 
 .approach {
-    width: 800px;
-    margin: 0 auto;
+    max-width: 800px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -52,16 +59,16 @@ main {
     gap: 50px;
 }
 
-.text-content ul {
-    list-style: decimal;
-}
-
 li img {
-    width: 200px;
+    max-width: 200px;
     height: auto;
 }
 
-.technologies h2 {
+.technologies {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
     text-align: center;
 }
 
@@ -73,25 +80,28 @@ li img {
 }
 
 .technologies-img img {
-    width: 250px;
+    max-width: 250px;
     height: auto;
     opacity: .5;
     transition: opacity 0.2s ease-in-out;
 }
 
-.technologies-img img:hover {
+.technologies-img img:hover, 
+.technologies-img img:focus {
     opacity: 1;
 }
 
 footer {
-    height: 12%;
+    min-height: 13%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-menu {
+    padding: 15px 0 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -143,4 +153,57 @@ footer {
 
 .social-icons i:hover {
     color: indianred;
+}
+
+@media (max-width: 540px) {
+ 
+    header {
+        height: 35%;
+    }
+    
+    header h1 {
+        font-size: 35px;
+    }
+    
+    .approach img {
+        width: 150px;
+    }
+    
+    .approach {
+        gap: 25px;
+    }
+    
+    .approach {
+        margin-bottom: 50px;
+    }
+    
+    .approach li {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .approach p {
+        max-width: 400px;
+    }   
+    
+    .technologies {
+        gap: 10px;
+    }
+    
+    .technologies-img {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        background-image: none;
+        height: auto;
+    }
+
+    header h1 {
+        display: none;
+    }
 }
