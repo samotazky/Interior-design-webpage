@@ -10,5 +10,5 @@ document.querySelector(".menu-btn").onclick = function () {
   body.classList.toggle("active-overlay")
 }
 
-let url = window.location.href
+let url = window.location.hash
 console.log(url);
