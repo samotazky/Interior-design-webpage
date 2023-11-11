@@ -9,3 +9,6 @@ document.querySelector(".menu-btn").onclick = function () {
   menuBtn.classList.toggle("change")
   body.classList.toggle("active-overlay")
 }
+
+let url = window.location.href
+console.log(url);
