@@ -45,12 +45,3 @@
   #root, #__next {
     isolation: isolate;
   }
-
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  ul {
-    list-style: none;
-  }

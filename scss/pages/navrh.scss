@@ -1,0 +1,49 @@
+@import "../variables";
+@import "../mixins";
+@include header;
+@include menu-styles;
+@include link;
+@include footer;
+@include body;
+
+
+header {
+    background-image: url(/img/Navrh-interieru.png);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0 15%;
+}
+
+.steps li {
+    display: flex;
+    align-items: center;
+}
+
+.technologies {
+    text-align: center;
+    background-color: $primary-color-dark;
+    padding: 5px 0;
+}
+
+.technologies-img {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 8%;
+    padding: 0 10%;
+}
+    
+.technologies-img img {
+    opacity: .5;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.technologies-img img:hover, 
+.technologies-img img:focus {
+    opacity: 1;
+}
+

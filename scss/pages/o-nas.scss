@@ -1,0 +1,28 @@
+@import "../variables";
+@import "../mixins";
+@include header;
+@include menu-styles;
+@include link;
+@include footer;
+@include body;
+
+header {
+    background-image: url(/img/o-nas.png);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-about-us {
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 445px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 10px;
+}

@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../mixins";
+@include header;
+@include menu-styles;
+@include link;
+@include footer;
+@include body;
+
+header {
+    background-image: url(/img/Projekty.png);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.interior {
+    position: relative;
+}
+
+.interior h2 {
+    z-index: 2;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}

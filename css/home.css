@@ -1,0 +1,139 @@
+.active-overlay {
+  overflow: hidden;
+}
+
+.menu-btn {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  z-index: 101;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s ease-in-out;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+#overlay {
+  background: #262626;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  margin: 10vw 25vw 0 25vw;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu-primary {
+  font-size: clamp(24px, 8vw, 56px);
+  font-weight: 600;
+}
+
+.menu-secondary {
+  font-weight: 600;
+  display: flex;
+  gap: 32px;
+  margin: 12px 0 0 0;
+}
+
+.menu-primary a,
+.menu-secondary a {
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-primary a:hover,
+.menu-secondary a:hover {
+  color: indianred;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(/img/home.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 40px 40px 0 40px;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 50px 50px 0px 50px;
+}
+
+.text-container {
+  width: clamp(200px, 50vw, 800px);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  justify-content: center;
+}
+
+.social-icons li {
+  transition: transform 0.5s ease-in-out;
+}
+
+.social-icons li:hover,
+.social-icons li:focus {
+  transform: translateY(-10px);
+  bottom: 100px;
+}/*# sourceMappingURL=home.css.map */
