@@ -171,6 +171,7 @@ header {
 }
 
 .interior {
+  width: clamp(340px, 27%, 30%);
   position: relative;
 }
 
